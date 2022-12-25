@@ -1,0 +1,14 @@
+.DS_Store
+.idea/
+.idea/*
+/vscode
+*.sublime*
+npm-debug*
+build/
+_template/
+css
+
+node_modules
+package-lock.json
+yarn.lock
+process.json

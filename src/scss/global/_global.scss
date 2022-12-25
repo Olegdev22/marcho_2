@@ -1,0 +1,95 @@
+html {
+	box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+	box-sizing: inherit;
+  }
+  
+  // !position fixed
+  html {
+	min-height: 100%;
+	position: relative;
+  }
+
+  .wrapper {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+  }
+  
+  body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #000;
+	background-color: var(--main-bg-color);
+  }
+  
+  .sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+  }
+  
+  
+  
+  .container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+  }
+
+
+  .button {
+	display: inline-block;
+	/*Переопределяем для ссылок*/
+	appearance: none;
+	/*сбрасываем стандартный вид в браузере*/
+	transition: background-color 0.3s ease, box-shadow 0.4s linear;
+	padding: 8px 16px;
+	border: transparent;
+	/*убираем стандартные стили границ*/
+	border-radius: 5px;
+	background-color: green;
+	cursor: pointer;
+	color: #fff;
+	font: inherit;
+	/*наследуем свойства шрифтов от родителя*/
+	font-size: 16px;
+	line-height: 1;
+  
+	&:focus {
+	  outline: transparent;
+	  /*убираем стандартную рамку вокруг элемента в фокусе*/
+	  box-shadow: 0 0 0 4px lightgreen;
+	}
+  
+	&:hover {
+	  background-color: darkgreen;
+	}
+  
+	&:active {
+	  box-shadow: inset 0 0 0 30px rgba(255, 255, 255, 0.1);
+	  transform: translateY(2px);
+	}
+  }
+  
+  .main {
+	flex: 1;
+  
+  }
+
+  .footer {
+	flex-shrink: 0;
+  }
