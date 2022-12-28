@@ -1,0 +1,174 @@
+.footer {
+  background-color: var(--bg);
+}
+
+.footer-top {
+  display: flex;
+  padding: 70px 0 40px;
+  border-bottom: 1px solid #ececec;
+
+  p {
+    margin-bottom: 27px;
+  }
+
+  &--contact {
+    width: 340px;
+    margin-right: 50px;
+  }
+
+  &--nav {
+    width: 200px;
+    margin: -8px 30px 0 0;
+  }
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: var(--title);
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  li {
+    margin-bottom: 18px;
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    color: var(--title);
+    transition: border-bottom-color 0.3s ease-in, border-color 0.3s ease-in, color 0.3s;
+    padding-bottom: 1px;
+
+    &:hover {
+      font-weight: 700;
+
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 1px;
+    }
+
+    &--active {
+      color: var(--accent);
+      font-weight: 700;
+      line-height: 1.5;
+      border-bottom: 1px solid var(--accent);
+    }
+  }
+
+  &__item--form {
+    max-width: 475px;
+    margin-top: -8px;
+  }
+
+  &__input {
+    display: inline-block;
+    max-width: 335px;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    transition: box-shadow 0.4s ease;
+    box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 1px rgba(#8d8d8d, 1);
+
+    }
+
+    &:active::placeholder {
+      background-color: #fff;
+    }
+  }
+
+  .button {
+
+    &--form {
+      padding: 14px 23px;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+.logo__img--logo {
+  margin-bottom: 26px;
+}
+
+.address {
+  font-style: normal;
+
+  &__list {
+
+    margin-bottom: 34px;
+  }
+
+  li {
+    margin-bottom: 18px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.social {
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  li:not(:last-child) {
+    margin-right: 19px;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    filter: invert(59%) sepia(0%) saturate(12%) hue-rotate(306deg) brightness(95%) contrast(85%);
+    transition: filter 0.5s ease-out;
+
+    &:hover {
+      filter: invert(40%) sepia(55%) saturate(4958%) hue-rotate(332deg) brightness(110%) contrast(108%);
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 30px 0;
+
+  &__iccept,
+  .footer-bottom__list {
+    display: flex;
+    align-items: center;
+
+    span,
+    .footer-bottom__item:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 33px;
+
+    &--mass {
+      height: 20px;
+    }
+
+    &--visa {
+      height: 20px;
+    }
+
+    &--pay {
+      width: 75px;
+      height: 20px;
+    }
+  }
+}
