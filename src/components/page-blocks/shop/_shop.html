@@ -1,0 +1,694 @@
+<section class="shop">
+  <h2 class="sr-only">Filters search page</h2>
+  <div class="container">
+    <div class="shop__inner">
+      <div class="shop__filters filter">
+
+        <div class="filter__item ilter-search">
+          <h3 class="filter__title filter-search__title">Search</h3>
+
+          <form class="filter-search__form" action="#" method="post">
+            <label for="text"></label>
+            <input class="filter-search__input" name="filter" type="text" id="text" placeholder="Search your keyword....">
+
+            <button class="filter-search__btn" type="submit"></button>
+          </form>
+        </div>
+
+        <div class="filter__item filter-price">
+          <h3 class="filter__title filter-price__title">Price Filter</h3>
+
+          <form class="filter-price__form" action="#" method="get">
+            <input class="filter-price__input" type="text" value="" data-min="0" data-max="999" data-from="200" data-to="800">
+
+            <label class="filter-price__label" for="filter">
+              <span>
+                Price:
+                $<span class="filter-price__from"></span>
+                -
+                $<span class="filter-price__to"></span>
+              </span>
+
+              <button class="button filter-price__btn" type="submit" id="">Filter</button>
+            </label>
+          </form>
+        </div>
+
+        <div class="filter__item filter-color">
+          <h3 class="filter__title filter-color__title">Color Filter</h3>
+
+          <form action="#" class="filter-color__form">
+            <label class="filter-color__label" for="blue">
+              <span class="filter-color__text">Blue (15)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox" id="blue">
+                <span class="filter-color__checkbox filter-color__checkbox--blue"></span>
+              </div>
+            </label>
+
+            <label class="filter-color__label" for="red">
+              <span class="filter-color__text">Red (09)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox" id="red">
+                <span class="filter-color__checkbox filter-color__checkbox--red"></span>
+              </div>
+            </label>
+
+            <label class="filter-color__label" for="green">
+              <span class="filter-color__text">Green (28)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox" id="green">
+                <span class="filter-color__checkbox filter-color__checkbox--green"></span>
+              </div>
+            </label>
+
+            <label class="filter-color__label" for="orange">
+              <span class="filter-color__text">Orange (11)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox" id="orange">
+                <span class="filter-color__checkbox filter-color__checkbox--orange"></span>
+              </div>
+            </label>
+
+            <label class="filter-color__label" for="black">
+              <span class="filter-color__text">Black (05)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox" id="black">
+                <span class="filter-color__checkbox filter-color__checkbox--black"></span>
+              </div>
+            </label>
+
+            <label class="filter-color__label" for="purpure">
+              <span class="filter-color__text">Purpure (21)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox" id="purpure">
+                <span class="filter-color__checkbox filter-color__checkbox--purpure"></span>
+              </div>
+            </label>
+          </form>
+        </div>
+
+        <div class="filter__item filter-size">
+          <h3 class="filter__title filter-size__title">
+            Size Filter
+          </h3>
+
+          <form class="filter-size__form" action="#">
+            <label class="filter-size__label">
+              <input class="filter-size__input" type="checkbox" name="">
+              <span class="filter-size__checkbox"></span>
+              <span class="filter-size__text">X-small</span>
+            </label>
+
+            <label class="filter-size__label">
+              <input class="filter-size__input" type="checkbox" name="">
+              <span class="filter-size__checkbox"></span>
+              <span class="filter-size__text">Medium</span>
+            </label>
+
+            <label class="filter-size__label">
+              <input class="filter-size__input" type="checkbox" name="">
+              <span class="filter-size__checkbox"></span>
+              <span class="filter-size__text">Large</span>
+            </label>
+
+            <label class="filter-size__label">
+              <input class="filter-size__input" type="checkbox" name="">
+              <span class="filter-size__checkbox"></span>
+              <span class="filter-size__text">XXL</span>
+            </label>
+          </form>
+        </div>
+
+        <div class="filter__item filter-category">
+          <h3 class="filter__title filter-category__title">
+            category
+          </h3>
+
+          <form class="filter-category__form" action="#">
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Woman</span>
+                <span>48</span>
+              </div>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Man</span>
+                <span>30</span>
+              </div>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox" checked>
+              <div class="filter-category__checkbox">
+                <span>Sale Products</span>
+                <span>92</span>
+              </div>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Fashion</span>
+                <span>121</span>
+              </div>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Hot Dresses</span>
+                <span>52</span>
+              </div>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Accessories</span>
+                <span>88</span>
+              </div>
+            </label>
+          </form>
+        </div>
+
+        <div class="filter__item filter-popular">
+          <h3 class="filter__title filter-popular__title">
+            Popular Tags
+          </h3>
+
+          <form class="filter-popular__form" action="#">
+            <label class="filter-popular__label">
+              <input class="filter-popular__input" type="checkbox">
+              <span class="filter-popular__checkbox">
+                Sweetshirt
+              </span>
+            </label>
+
+            <label class="filter-popular__label">
+              <input class="filter-popular__input" type="checkbox">
+              <span class="filter-popular__checkbox">
+                Man Accessories
+              </span>
+            </label>
+
+            <label class="filter-popular__label">
+              <input class="filter-popular__input" type="checkbox">
+              <span class="filter-popular__checkbox">
+                Fashion
+              </span>
+            </label>
+
+            <label class="filter-popular__label">
+              <input class="filter-popular__input" type="checkbox">
+              <span class="filter-popular__checkbox">
+                Polo
+              </span>
+            </label>
+
+            <label class="filter-popular__label">
+              <input class="filter-popular__input" type="checkbox">
+              <span class="filter-popular__checkbox">
+                T-Shirt
+              </span>
+            </label>
+
+            <label class="filter-popular__label">
+              <input class="filter-popular__input" type="checkbox">
+              <span class="filter-popular__checkbox">
+                Jewellery
+              </span>
+            </label>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="shop-content">
+        <div class="shop-content__filter">
+          <div class="shop-content__buttons">
+            <span class="shop-content__text">View</span>
+            <button class="shop-content__btn shop-content__btn-grid shop-content__btn--active button-grid"></button>
+            <button class="shop-content__btn shop-content__btn-list button-list"></button>
+          </div>
+
+          <div class="shop-content__selects">
+            <form class="shop-content__form" action="#">
+              <select class="shop-content__sort select-style" name="" id="">
+                <option value="">Sort By Default</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+              <select class="shop-content__sort select-style" name="" id="">
+                <option value="">Show 9</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </form>
+          </div>
+        </div>
+
+        <div class="shop-content__inner">
+          <div class="product-item">
+            <div class="product-item__img">
+              <img src="../../img/content/product/img_1.jpg" alt="img polo">
+              <ul class="product-item__list">
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-search.png');">
+                    <span class="sr-only">перейти к товару</span>
+                  </a>
+                </li>
+                <li class="product-item__item product-item__item--line">
+                  <a class="product-item__link product-item__link--line" href="#" style="background-image: url('../../img/icons/icon-bag.png');">
+                    <span class="sr-only">товар в корзине</span>
+                  </a>
+                </li>
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-heart.png');">
+                    <span class="sr-only">понравившийся товар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-item__holder">
+              <div class="product-item__box">
+                <div class="star" data-rateyo-rating="4"></div>
+                <h4 class="product-item__title">
+                  White Polo Men’s T-Shirt
+                </h4>
+                <div class="product-item__price">
+                  <div class="product-item__new-price">$34.00</div>
+                </div>
+                <div class="product-item__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                  </p>
+                  <button class="button product-item__btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item product-item--sale">
+            <div class="product-item__img">
+              <img src="../../img/content/product/img_2.jpg" alt="img polo">
+              <ul class="product-item__list">
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-search.png');">
+                    <span class="sr-only">перейти к товару</span>
+                  </a>
+                </li>
+                <li class="product-item__item product-item__item--line">
+                  <a class="product-item__link product-item__link--line" href="#" style="background-image: url('../../img/icons/icon-bag.png');">
+                    <span class="sr-only">товар в корзине</span>
+                  </a>
+                </li>
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-heart.png');">
+                    <span class="sr-only">понравившийся товар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-item__holder">
+              <div class="product-item__box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <h4 class="product-item__title">
+                  White Polo Men’s T-Shirt
+                </h4>
+                <div class="product-item__price">
+                  <div class="product-item__new-price">$34.00</div>
+                  <div class="product-item__old-price">$27.00</div>
+                </div>
+                <div class="product-item__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                  </p>
+                  <button class="button product-item__btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-item__img">
+              <img src="../../img/content/product/img_3.jpg" alt="img polo">
+              <ul class="product-item__list">
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-search.png');">
+                    <span class="sr-only">перейти к товару</span>
+                  </a>
+                </li>
+                <li class="product-item__item product-item__item--line">
+                  <a class="product-item__link product-item__link--line" href="#" style="background-image: url('../../img/icons/icon-bag.png');">
+                    <span class="sr-only">товар в корзине</span>
+                  </a>
+                </li>
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-heart.png');">
+                    <span class="sr-only">понравившийся товар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-item__holder">
+              <div class="product-item__box">
+                <div class="star" data-rateyo-rating="3.5"></div>
+                <h4 class="product-item__title">
+                  White Polo Men’s T-Shirt
+                </h4>
+                <div class="product-item__price">
+                  <div class="product-item__new-price">$34.00</div>
+                </div>
+                <div class="product-item__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                  </p>
+                  <button class="button product-item__btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="product-item product-item--sale">
+            <div class="product-item__img">
+              <img src="../../img/content/product/img_4.jpg" alt="img polo">
+              <ul class="product-item__list">
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-search.png');">
+                    <span class="sr-only">перейти к товару</span>
+                  </a>
+                </li>
+                <li class="product-item__item product-item__item--line">
+                  <a class="product-item__link product-item__link--line" href="#" style="background-image: url('../../img/icons/icon-bag.png');">
+                    <span class="sr-only">товар в корзине</span>
+                  </a>
+                </li>
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-heart.png');">
+                    <span class="sr-only">понравившийся товар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-item__holder">
+              <div class="product-item__box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <h4 class="product-item__title">
+                  White Polo Men’s T-Shirt
+                </h4>
+                <div class="product-item__price">
+                  <div class="product-item__new-price">$34.00</div>
+                  <div class="product-item__old-price">$27.00</div>
+                </div>
+                <div class="product-item__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                  </p>
+                  <button class="button product-item__btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-item__img">
+              <img src="../../img/content/product/img_5.jpg" alt="img polo">
+              <ul class="product-item__list">
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-search.png');">
+                    <span class="sr-only">перейти к товару</span>
+                  </a>
+                </li>
+                <li class="product-item__item product-item__item--line">
+                  <a class="product-item__link product-item__link--line" href="#" style="background-image: url('../../img/icons/icon-bag.png');">
+                    <span class="sr-only">товар в корзине</span>
+                  </a>
+                </li>
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-heart.png');">
+                    <span class="sr-only">понравившийся товар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-item__holder">
+              <div class="product-item__box">
+                <div class="star" data-rateyo-rating="4.5"></div>
+                <h4 class="product-item__title">
+                  White Polo Men’s T-Shirt
+                </h4>
+                <div class="product-item__price">
+                  <div class="product-item__new-price">$34.00</div>
+                </div>
+                <div class="product-item__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                  </p>
+                  <button class="button product-item__btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item product-item--sale">
+            <div class="product-item__img">
+              <img src="../../img/content/product/img_6.jpg" alt="img polo">
+              <ul class="product-item__list">
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-search.png');">
+                    <span class="sr-only">перейти к товару</span>
+                  </a>
+                </li>
+                <li class="product-item__item product-item__item--line">
+                  <a class="product-item__link product-item__link--line" href="#" style="background-image: url('../../img/icons/icon-bag.png');">
+                    <span class="sr-only">товар в корзине</span>
+                  </a>
+                </li>
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-heart.png');">
+                    <span class="sr-only">понравившийся товар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-item__holder">
+              <div class="product-item__box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <h4 class="product-item__title">
+                  White Polo Men’s T-Shirt
+                </h4>
+                <div class="product-item__price">
+                  <div class="product-item__new-price">$34.00</div>
+                  <div class="product-item__old-price">$27.00</div>
+                </div>
+                <div class="product-item__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                  </p>
+                  <button class="button product-item__btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-item__img">
+              <img src="../../img/content/product/img_5.jpg" alt="img polo">
+              <ul class="product-item__list">
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-search.png');">
+                    <span class="sr-only">перейти к товару</span>
+                  </a>
+                </li>
+                <li class="product-item__item product-item__item--line">
+                  <a class="product-item__link product-item__link--line" href="#" style="background-image: url('../../img/icons/icon-bag.png');">
+                    <span class="sr-only">товар в корзине</span>
+                  </a>
+                </li>
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-heart.png');">
+                    <span class="sr-only">понравившийся товар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-item__holder">
+              <div class="product-item__box">
+                <div class="star" data-rateyo-rating="4.5"></div>
+                <h4 class="product-item__title">
+                  White Polo Men’s T-Shirt
+                </h4>
+                <div class="product-item__price">
+                  <div class="product-item__new-price">$34.00</div>
+                </div>
+                <div class="product-item__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                  </p>
+                  <button class="button product-item__btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item product-item--sale">
+            <div class="product-item__img">
+              <img src="../../img/content/product/img_6.jpg" alt="img polo">
+              <ul class="product-item__list">
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-search.png');">
+                    <span class="sr-only">перейти к товару</span>
+                  </a>
+                </li>
+                <li class="product-item__item product-item__item--line">
+                  <a class="product-item__link product-item__link--line" href="#" style="background-image: url('../../img/icons/icon-bag.png');">
+                    <span class="sr-only">товар в корзине</span>
+                  </a>
+                </li>
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-heart.png');">
+                    <span class="sr-only">понравившийся товар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-item__holder">
+              <div class="product-item__box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <h4 class="product-item__title">
+                  White Polo Men’s T-Shirt
+                </h4>
+                <div class="product-item__price">
+                  <div class="product-item__new-price">$34.00</div>
+                  <div class="product-item__old-price">$27.00</div>
+                </div>
+                <div class="product-item__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                  </p>
+                  <button class="button product-item__btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-item__img">
+              <img src="../../img/content/product/img_5.jpg" alt="img polo">
+              <ul class="product-item__list">
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-search.png');">
+                    <span class="sr-only">перейти к товару</span>
+                  </a>
+                </li>
+                <li class="product-item__item product-item__item--line">
+                  <a class="product-item__link product-item__link--line" href="#" style="background-image: url('../../img/icons/icon-bag.png');">
+                    <span class="sr-only">товар в корзине</span>
+                  </a>
+                </li>
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-heart.png');">
+                    <span class="sr-only">понравившийся товар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-item__holder">
+              <div class="product-item__box">
+                <div class="star" data-rateyo-rating="4.5"></div>
+                <h4 class="product-item__title">
+                  White Polo Men’s T-Shirt
+                </h4>
+                <div class="product-item__price">
+                  <div class="product-item__new-price">$34.00</div>
+                </div>
+                <div class="product-item__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                  </p>
+                  <button class="button product-item__btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item product-item--sale">
+            <div class="product-item__img">
+              <img src="../../img/content/product/img_6.jpg" alt="img polo">
+              <ul class="product-item__list">
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-search.png');">
+                    <span class="sr-only">перейти к товару</span>
+                  </a>
+                </li>
+                <li class="product-item__item product-item__item--line">
+                  <a class="product-item__link product-item__link--line" href="#" style="background-image: url('../../img/icons/icon-bag.png');">
+                    <span class="sr-only">товар в корзине</span>
+                  </a>
+                </li>
+                <li class="product-item__item">
+                  <a class="product-item__link" href="#" style="background-image: url('../../img/icons/icon-heart.png');">
+                    <span class="sr-only">понравившийся товар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-item__holder">
+              <div class="product-item__box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <h4 class="product-item__title">
+                  White Polo Men’s T-Shirt
+                </h4>
+                <div class="product-item__price">
+                  <div class="product-item__new-price">$34.00</div>
+                  <div class="product-item__old-price">$27.00</div>
+                </div>
+                <div class="product-item__content">
+                  <p>
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                  </p>
+                  <button class="button product-item__btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <a class="pagination__prev pagination__arrows" href="#">
+            previous
+          </a>
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--active" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <span class="pagination__link" href="#">...</span>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">10</a>
+            </li>
+          </ul>
+          <a class="pagination__next pagination__arrows" href="#">
+            next
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

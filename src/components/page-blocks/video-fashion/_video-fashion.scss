@@ -1,0 +1,64 @@
+.video-fashion {
+  background-image: url('../../img/video-fashion-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__popup {
+    margin-right: 60px;
+    max-width: 535px;
+    height: 479px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    &:hover {
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: background-color 0.4s ease-in-out;
+      }
+
+      .video-fashion__play img {
+        scale: 0.75;
+
+      }
+    }
+  }
+
+  &__play {
+    z-index: 1;
+  }
+
+  &__content {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text p {
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 55px;
+  }
+}

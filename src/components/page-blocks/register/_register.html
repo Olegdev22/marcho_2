@@ -1,0 +1,29 @@
+<section class="modal">
+  <h2 class="sr-only">Форма входа на сайт</h2>
+  <div class="container">
+    <div class="modal__links">
+      <a class="modal__link modal__link--active" href="../../register.html">register</a>
+      <a class="modal__link" href="../../login.html">login</a>
+    </div>
+    <form class="modal__form" action="#">
+      <label class="modal__label" for="text">Username or email address*</label>
+      <input class="modal__input" type="text" name="mail" id="email" required placeholder="">
+
+      <label class="modal__label" for="password">Password*</label>
+      <input class="modal__input" type="password" name="password" id="password" required placeholder="">
+
+      <div class="modal__text">
+        <p>
+          A password will be sent to your email address.
+        </p>
+        <p>
+          Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.
+        </p>
+      </div>
+
+      <input type="checkbox" name="checkbox" id="checkbox">
+      <label class="modal__label" for="checkbox">Agree with Terms & Conditions</label>
+      <button class="modal__button" type="submit">register</button>
+    </form>
+  </div>
+</section>

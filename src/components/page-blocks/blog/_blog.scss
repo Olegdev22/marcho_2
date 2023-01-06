@@ -1,0 +1,130 @@
+.blog {
+  background-image: url('../../img/blog-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 164px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  &__text-center {
+    margin-bottom: 55px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      right: -24px;
+      top: -28px;
+      z-index: -1;
+      width: 126px;
+      height: 53px;
+      background-image: url('../../img/decor/blog-after-bg.png');
+    }
+  }
+
+  &__item {
+    max-width: 370px;
+    border: 1px solid #ecec;
+    transition: border 0.4s, box-shadow 0.4s ease;
+
+    &:hover {
+      border: 1px solid transparent;
+      box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+
+      .blog__item-link {
+        color: var(--accent);
+      }
+
+      .blog__item-link::before {
+        filter: invert(58%) sepia(64%) saturate(7157%) hue-rotate(329deg) brightness(99%) contrast(103%);
+      }
+    }
+  }
+
+  &__item-imglink {
+    max-width: 370px;
+    overflow: hidden;
+    img {
+      height: 288px;
+      object-fit: cover;
+    }
+  }
+
+  &__item-box {
+    padding: 30px 40px;
+  }
+
+  &__item-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  &__item-author {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__item-author,
+  &__item-date {
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 3px;
+    }
+  }
+
+  &__item-author::before {
+    background-image: url('../../img/icons/icon-user.png');
+  }
+
+  &__item-date::before {
+    background-image: url('../../img/icons/icon-time.png');
+  }
+
+  &__item-title {
+    text-decoration: none;
+
+    h3 {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.4;
+      color: var(--title);
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item-link {
+    position: relative;
+    text-decoration: none;
+    padding-right: 14px;
+
+    &:hover {
+      color: var(--accent);
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 8px;
+      right: 0;
+      top: 9px;
+      background-image: url('../../img/icons/icon-arrow.png');
+    }
+  }
+}
