@@ -46,7 +46,13 @@ $(function() {
     asNavFor: '.product-slide__thumb',
     draggable: false,
     arrows: false,
-    fade: true 
+    fade: true
+  });
+
+  $('.blog-page__slider').slick({
+    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="img/sprite.svg#icon-angle-left" /></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="img/sprite.svg#icon-angle-right" /></svg></button>',
+    infinite: false,
   });
 
   $(".star").rateYo({
@@ -54,7 +60,10 @@ $(function() {
     starWidth: "17px",
     normalFill: "#ccccce",
     ratedFill: "#ffc35b",
-    readOnly: true
+    readOnly: true,
+    starSvg: '<svg class="comments-form__star">' +
+      '<use xlink:href="img/sprite.svg#icon-star-solid" />' +
+      '</svg>'
   });
 
   function getTimeRemaining(endtime) {
@@ -138,7 +147,7 @@ $('.button-grid').on('click', function() {
 });
 
 //tabs
-$('.tabs__top-link').on('click', function(e){
+$('.tabs__top-link').on('click', function(e) {
   e.preventDefault();
   $('.tabs__top-link').removeClass('tabs__top-link--active');
   $(this).addClass('tabs__top-link--active');

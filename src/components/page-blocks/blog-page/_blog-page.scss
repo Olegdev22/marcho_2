@@ -1,0 +1,260 @@
+.blog-page {
+  padding: 120px 0 60px;
+
+  &__slider {
+
+    &.slick-initialized,
+    .slick-slider {
+      height: 450px;
+    }
+
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+      background-color: var(--accent);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: transparent;
+      cursor: pointer;
+      box-shadow: 0 7px 20px 0 rgba(254, 62, 87, 0.3);
+
+      & svg {
+        width: 9px;
+        height: 14px;
+        filter: invert(100%) sepia(8%) saturate(7451%) hue-rotate(293deg) brightness(111%) contrast(113%);
+      }
+    }
+
+    .slick-disabled {
+      background-color: #fff;
+      box-shadow: 0 7px 20px 0 rgba(168, 168, 168, 0.3);
+
+      &.slick-prev svg {
+        filter: invert(37%) sepia(57%) saturate(3942%) hue-rotate(330deg) brightness(101%) contrast(99%);
+      }
+
+      &.slick-next svg {
+        filter: invert(37%) sepia(57%) saturate(3942%) hue-rotate(330deg) brightness(101%) contrast(99%);
+      }
+    }
+
+    .slick-prev {
+      left: 40px;
+    }
+
+    .slick-next {
+      right: 40px;
+    }
+
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 770px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  &__popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 770px;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  &__item {
+    margin-bottom: 60px;
+
+    &.blog-page__item--no-img {
+      border-top: 1px solid #ececec;
+    }
+
+    &:hover {
+
+      .blog-page__box {
+        border: 1px solid transparent;
+        border-top: none;
+
+      }
+    }
+
+    &:hover {
+      &.blog-page__item--no-img {
+        border-top: 1px solid transparent;
+      }
+
+      .blog-page__link {
+        color: var(--accent);
+      }
+
+      box-shadow: 0 20px 60px 0 rgba(202, 202, 202, 0.35);
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__img {
+    max-width: 770px;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  &__img-btn {
+    cursor: pointer;
+  }
+
+  &__box {
+    padding: 40px;
+    border: 1px solid #ececec;
+    border-top: none;
+
+    .blog-time {
+      display: flex;
+      justify-content: start;
+      font-family: 'Quicksand', sans-serif;
+
+      &__author {
+        margin-right: 35px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--title);
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 25px;
+  }
+
+  &__aside {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+
+.person {
+  text-align: center;
+  padding: 40px 25px;
+  border: 1px solid #ececec;
+  margin-bottom: 40px;
+
+  &__img {
+    display: inline-block;
+    object-fit: cover;
+    margin: 0 auto 35px;
+  }
+
+  &__name {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--title);
+  }
+
+  &__position {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--accent);
+    margin-bottom: 25px;
+  }
+
+  &__text p {
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 28px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+
+    .social__list li:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+
+.latest-post {
+  padding: 33px 30px 40px;
+  border: 1px solid #ececec;
+  margin-bottom: 40px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--title);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    display: flex;
+    padding: 20px 0 18px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__item:last-child {
+    padding: 20px 0 0;
+    border-bottom: none;
+  }
+
+  &__img-link {
+    display: block;
+    min-width: 80px;
+    margin-right: 20px;
+  }
+
+  &__img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  &__title-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--title);
+    text-decoration: none;
+  }
+
+  &__text {
+    display: block;
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    font-size: 16px;
+    padding-left: 26px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 2px;
+      background-image: url('../../../img/icons/icon-calendar.png');
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
