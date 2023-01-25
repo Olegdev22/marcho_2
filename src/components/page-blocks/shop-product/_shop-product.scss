@@ -139,75 +139,82 @@
     }
   }
 
-  .comments {
+  
+}
+
+.comments {
+  display: flex;
+  margin-bottom: 40px;
+
+  &__img {
+    margin-right: 30px;
+    min-width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  &__top {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+  }
 
-    &__img {
-      margin-right: 30px;
-      min-width: 71px;
-      height: 71px;
-      border-radius: 50%;
-      overflow: hidden;
-      object-fit: cover;
-    }
+  &__name {
+    display: inline-block;
+    font-weight: 400;
+    color: var(--title);
+    margin-right: 30px;
+    position: relative;
 
-    &__top {
-      display: flex;
-      margin-bottom: 10px;
-    }
-
-    &__name {
-      display: inline-block;
-      font-weight: 400;
-      color: var(--title);
-      margin-right: 30px;
-      position: relative;
-
-      &::after {
-        position: absolute;
-        content: '';
-        width: 1px;
-        height: 13px;
-        top: 6px;
-        right: -14px;
-        background-color: var(--default);
-      }
-    }
-
-    &__data,
-    .comments__text p {
-      font-family: 'Quicksand', sans-serif;
-    }
-
-    &__text {
-      margin-bottom: 15px;
-    }
-
-    &__star {
-      margin-left: auto;
-      margin-right: 0;
-    }
-
-    &__link {
-      display: inline-block;
-      margin-left: 25px;
-      text-decoration: none;
-      position: relative;
-
-      &::before {
-        position: absolute;
-        content: '';
-        width: 15px;
-        height: 14px;
-        top: 7px;
-        left: -25px;
-        background-image: url('../../../img/icons/icons-reply.png');
-      }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 13px;
+      top: 6px;
+      right: -14px;
+      background-color: var(--default);
     }
   }
 
-  .comments-form {
+  &__data,
+  .comments__text p {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+
+  &__star {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: none;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 14px;
+      top: 7px;
+      left: -25px;
+      background-image: url('../../../img/icons/icons-reply.png');
+    }
+  }
+}
+
+.comments:last-child {
+  margin-bottom: 60px;
+}
+
+.comments-form {
 
     &__title {
       display: block;
@@ -249,7 +256,7 @@
       &:checked + .comments-form__radio {
 
         .comments-form__star {
-          filter: invert(77%) sepia(45%) saturate(639%) hue-rotate(337deg) brightness(102%) contrast(102%);
+          filter: invert(78%) sepia(66%) saturate(373%) hue-rotate(348deg) brightness(101%) contrast(103%);
         }
       }
     }
@@ -261,7 +268,7 @@
     &__star {
       width: 18px;
       height: 18px;
-      filter: invert(84%) sepia(3%) saturate(104%) hue-rotate(202deg) brightness(100%) contrast(86%);
+      
     }
 
     &__input-box {
@@ -306,10 +313,6 @@
     }
   }
 
-  .comments:last-child {
-    margin-bottom: 60px;
-  }
-}
 
 .jq-number {
 
