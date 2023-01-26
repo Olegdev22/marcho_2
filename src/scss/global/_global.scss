@@ -1,95 +1,181 @@
 html {
-	box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-	box-sizing: inherit;
-  }
-  
-  // !position fixed
-  html {
-	min-height: 100%;
-	position: relative;
-  }
+  box-sizing: border-box;
+}
 
-  .wrapper {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-  }
-  
-  body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.5;
-	color: #000;
-	background-color: var(--main-bg-color);
-  }
-  
-  .sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-  }
-  
-  
-  
-  .container {
-	max-width: 1200px;
-	padding: 0 15px;
-	margin: 0 auto;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// !position fixed
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--default);
+  background-color: var(--main-bg-color);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 
-  .button {
-	display: inline-block;
-	/*Переопределяем для ссылок*/
-	appearance: none;
-	/*сбрасываем стандартный вид в браузере*/
-	transition: background-color 0.3s ease, box-shadow 0.4s linear;
-	padding: 8px 16px;
-	border: transparent;
-	/*убираем стандартные стили границ*/
-	border-radius: 5px;
-	background-color: green;
-	cursor: pointer;
-	color: #fff;
-	font: inherit;
-	/*наследуем свойства шрифтов от родителя*/
-	font-size: 16px;
-	line-height: 1;
-  
-	&:focus {
-	  outline: transparent;
-	  /*убираем стандартную рамку вокруг элемента в фокусе*/
-	  box-shadow: 0 0 0 4px lightgreen;
-	}
-  
-	&:hover {
-	  background-color: darkgreen;
-	}
-  
-	&:active {
-	  box-shadow: inset 0 0 0 30px rgba(255, 255, 255, 0.1);
-	  transform: translateY(2px);
-	}
-  }
-  
-  .main {
-	flex: 1;
-  
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.button {
+  display: inline-block;
+  /*Переопределяем для ссылок*/
+  appearance: none;
+  /*сбрасываем стандартный вид в браузере*/
+  transition: background-color 0.3s ease, box-shadow 0.4s linear;
+  padding: 15px 30px;
+  border: transparent;
+  background-color: var(--accent);
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 7px 20px 0 rgba(255, 17, 48, 0.3);
+  font: inherit;
+  letter-spacing: 2px;
+
+  &:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 1px rgba(#8d8d8d, 1);
   }
 
-  .footer {
-	flex-shrink: 0;
+  &:hover {
+    box-shadow: 0 0 0 1px rgba(#fe3e57, 1);
+    background-color: transparent;
+    color: var(--title);
   }
+
+  &:active {
+    box-shadow: inset 0 0 0 30px rgba(255, 255, 255, 0.1);
+    transform: translateY(2px);
+  }
+}
+
+.subtitle {
+  font-size: 22px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.title {
+  display: block;
+  font-size: 48px;
+  line-height: 1.2;
+  color: var(--title);
+  text-transform: uppercase;
+}
+
+.text-center {
+  font-family: 'Quicksand', sans-serif;
+  display: block;
+  max-width: 535px;
+  text-align: center;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+
+  &__list {
+    display: flex;
+    padding: 0 35px;
+  }
+
+  &__item {
+     padding: 0 15px;
+  }
+
+  &__link {
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+  }
+
+  &__link--active {
+    color: var(--accent);
+  }
+
+  &__arrows {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 11px;
+      background-repeat: no-repeat;
+      top: 7px;
+    }
+  }
+
+  &__prev {
+    padding-left: 15px;
+
+    &::before {
+      left: 0;
+      background-image: url(../../img/icons/icon-angle-left-pagin.png);
+    }
+  }
+
+  &__next {
+    padding-right: 15px;
+
+    &::before {
+      right: 0;
+      background-image: url(../../img/icons/icon-angle-right-pagin.png);
+    }
+  }
+}
+
+.main {
+  flex: 1;
+  padding-top: 112px;
+}
+
+.footer {
+  flex-shrink: 0;
+}

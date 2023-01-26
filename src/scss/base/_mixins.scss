@@ -87,3 +87,21 @@
 	padding: 0 #{$padding};
 	margin: 0 auto;
 }
+
+@mixin checkbox-hidden ($width:'1px', $height:'1px', $display:'none') {
+	width: #{$width};
+    height: #{$height};
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+	display: #{$display};
+}
+
+@mixin radio-hidden ($width:'1px', $height:'1px', $display:'none') {
+	width: #{$width};
+    height: #{$height};
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+	display: #{$display};
+}

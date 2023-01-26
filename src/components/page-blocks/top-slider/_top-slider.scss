@@ -1,0 +1,93 @@
+.top-slider {
+  background-image: url('../../img/slider/top-slider-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f6f6f6;
+  padding: 65px 0 43px 0;
+  display: inline-block;
+
+  &__container {
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 770px;
+    padding-left: 200px;
+    padding-top: 125px;
+  }
+
+  &__title {
+
+    span,
+    h2 {
+      font-size: 58px;
+      line-height: 1.1;
+      color: var(--title);
+      margin-bottom: 35px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+
+    span {
+      display: block;
+      margin-bottom: 50px;
+      max-width: 470px;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+
+    li {
+      padding: 0 5px;
+      line-height: 0;
+
+      button {
+        padding: 0;
+        font-size: 0;
+        background-color: transparent;
+        width: 26px;
+        height: 26px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: var(--default);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &.slick-active {
+        button {
+          border-color: var(--accent);
+
+          &::before {
+            background-color: var(--accent);
+          }
+        }
+      }
+    }
+  }
+}

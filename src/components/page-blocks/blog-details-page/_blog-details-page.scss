@@ -1,0 +1,180 @@
+.blog-one {
+
+  &__inner {
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 30px;
+
+    h3 {
+      font-size: 22px;
+      color: var(--title);
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-family: 'Quicksand', sans-serif;
+      margin-bottom: 33px;
+    }
+
+    blockquote p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.4;
+      color: var(--title);
+      background-color: #f6f6f6;
+      padding: 24px 37px;
+      border-left: 3px solid var(--accent);
+    }
+  }
+
+  &__left-img {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 7px;
+  }
+
+  &__right-img {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 7px;
+  }
+
+  &__info {
+    display: flex;
+    margin-bottom: 23px;
+  }
+
+  &__item {
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 27px;
+    position: relative;
+
+    &:last-child {
+      padding-left: 30px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 5px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url('../../../img/icons/icon-calendar.png');
+    }
+  }
+
+  &__item--comment::before {
+    background-image: url('../../../img/sprite.svg#icon-comment-dots');
+    background-repeat: no-repeat;
+    top: 6px;
+    filter: invert(35%) sepia(47%) saturate(3573%) hue-rotate(330deg) brightness(101%) contrast(99%);
+  }
+
+  &__item--user::before {
+    background-image: url('../../../img/icons/icon-user.png');
+    width: 19px;
+    filter: invert(35%) sepia(47%) saturate(3573%) hue-rotate(330deg) brightness(101%) contrast(99%);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__form-title {
+    font-weight: 700;
+    color: var(--title);
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 27px 0 24px;
+    display: block;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 35px;
+  }
+
+  &__tags,
+  &__share {
+    font-family: 'Quicksand', sans-serif;
+
+    span {
+      color: var(--title);
+      text-transform: uppercase;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__share {
+    display: flex;
+
+    .social {
+
+      &__list {
+        transform: translateY(1px);
+      }
+
+      &__list li:first-child {
+        margin-left: 8px;
+      }
+
+      &__list li svg {
+        filter: invert(49%) sepia(0%) saturate(1488%) hue-rotate(180deg) brightness(88%) contrast(84%);
+
+        &:hover {
+          filter: invert(31%) sepia(85%) saturate(2000%) hue-rotate(332deg) brightness(106%) contrast(99%);
+        }
+      }
+    }
+  }
+
+  &__author {
+    display: flex;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+
+  &__name {
+    font-size: 22px;
+    margin-bottom: 23px;
+    color: var(--title);
+    text-transform: uppercase;
+  }
+
+  &__author-info p {
+    font-family: 'Quicksand', sans-serif ;
+  }
+
+  .comments-title {
+    display: inline-block;
+    font-size: 24px;
+    color: var(--title);
+    text-transform: uppercase;
+    margin-bottom: 23px;
+  }
+
+  .comments-form {
+
+    &__button {
+      font-weight: 400;
+    }
+  }
+}
