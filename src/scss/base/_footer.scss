@@ -57,6 +57,10 @@
     }
   }
 
+  &__form {
+    display: flex;
+  }
+
   &__item--form {
     max-width: 475px;
     margin-top: -8px;
@@ -66,6 +70,7 @@
     display: inline-block;
     max-width: 335px;
     width: 100%;
+    margin-right: 10px;
     border: none;
     padding: 15px;
     font-size: 16px;
