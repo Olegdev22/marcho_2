@@ -155,3 +155,15 @@ $('.tabs__top-link').on('click', function(e) {
   $('.tabs__content-item').removeClass('tabs__content-item--active');
   $($(this).attr('href')).addClass('tabs__content-item--active');
 });
+
+//map
+let map;
+ 
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 40.721030086455606, lng: -73.98786094706172 },
+    zoom: 10,
+  });
+}
+
+window.initMap = initMap;
